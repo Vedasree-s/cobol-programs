@@ -1,0 +1,41 @@
+   IDENTIFICATION DIVISION.
+   PROGRAM-ID. GREATESTNUMBER.
+
+   ENVIRONMENT DIVISION.
+
+   DATA DIVISION.
+   WORKING-STORAGE SECTION.
+   01 NUM1        PIC 9(4).
+   01 NUM2        PIC 9(4).
+   01 NUM3        PIC 9(4).
+   01 NUM4        PIC 9(4).
+   01 GREATEST    PIC 9(4).
+
+   PROCEDURE DIVISION.
+   MAIN-PARA.
+       DISPLAY "Enter first number: " WITH NO ADVANCING.
+       ACCEPT NUM1.
+       DISPLAY "Enter second number: " WITH NO ADVANCING.
+       ACCEPT NUM2.
+       DISPLAY "Enter third number: " WITH NO ADVANCING.
+       ACCEPT NUM3.
+       DISPLAY "Enter fourth number: " WITH NO ADVANCING.
+       ACCEPT NUM4.
+
+       MOVE NUM1 TO GREATEST.
+
+       IF NUM2 > GREATEST THEN
+           MOVE NUM2 TO GREATEST
+       END-IF.
+
+       IF NUM3 > GREATEST THEN
+           MOVE NUM3 TO GREATEST
+       END-IF.
+
+       IF NUM4 > GREATEST THEN
+           MOVE NUM4 TO GREATEST
+       END-IF.
+
+       DISPLAY "The greatest number is: " GREATEST.
+
+       STOP RUN.
