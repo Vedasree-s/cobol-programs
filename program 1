@@ -37,5 +37,6 @@
        END-IF.
 
        DISPLAY "The greatest number is: " GREATEST.
+       DISPLAY "DONE SUCCESSFULLY".
 
        STOP RUN.
